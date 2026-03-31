@@ -1,0 +1,53 @@
+# LaTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# LaTeX build artifacts
+*.dvi
+*.xdv
+*-converted-to.*
+*.ps
+*.eps
+
+# BibTeX
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# makeindex / nomencl
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.idx
+*.ilg
+*.ind
+*.nlo
+*.nls
+
+# Latexmk
+*.fdb_latexmk
+*.fls
+
+# Build directories
+build/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
