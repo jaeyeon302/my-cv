@@ -58,6 +58,12 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
+\newcommand{\resumeSubheadingExtra}[2]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \renewcommand{\labelitemi}{}
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -72,7 +78,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{http://www.jaeyeonpark.kr}{\Large Jaeyeon Park}} &
-    Email: \href{mailto:ok6530@snu.ac.kr}{ok6530@snu.ac.kr}, \href{mailto:ok6530@snu.ac.kr}{jaeyeonparc@icloud.com} \\
+    Email: \href{mailto:ok6530@snu.ac.kr}{ok6530@snu.ac.kr}\\ %\href{mailto:ok6530@snu.ac.kr}{jaeyeonparc@icloud.com} \\
   & \href{http://www.jaeyeonpark.kr}{www.jaeyeonpark.kr}
 \end{tabular*}
 
@@ -102,7 +108,9 @@
     \resumeSubheading
       {Seoul National University}{Seoul, Republic of Korea}
       {B.S., Electrical and Computer Engineering; GPA:\,3.35/4.3}{2015 -- 2021}
-
+      \resumeItemListStart
+        \resumeItem{Thesis}{Battery Electric Vehicle Motor Control System Design and Implementation.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -111,7 +119,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Power Conversion \& Systems Lab (PCSL), Seoul National University}{Seoul, Republic of Korea}
+      {Power Conversion \& Systems Lab, Seoul National University}{Seoul, Republic of Korea}
       {Ph.D. Candidate; Advisor: Prof. Shenghui Cui}{2023 -- present}
       \resumeItemListStart
         \resumeItem{MMC-Based MV Variable Frequency Drive}
@@ -123,7 +131,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Electric Energy Processing \& Control Lab (EEPEL), Seoul National University}{Seoul, Republic of Korea}
+      {Electric Energy Processing \& Control Lab, Seoul National University}{Seoul, Republic of Korea}
       {M.S. Researcher; Advisor: Prof. Seung-Ki Sul, IEEE Fellow}{2021 -- 2023}
       \resumeItemListStart
         \resumeItem{IPMSM Optimal Control}
@@ -149,9 +157,26 @@
           for massive signal processing.}
       \resumeItemListEnd
 
+
+
   \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{ Teaching Experience}
+  \resumeSubHeadingListStart
 
+    \resumeSubheading
+      {Seoul National University}{Seoul, Republic of Korea}
+      {Teaching Assistant, Electric Machines and Control; Instructor: Prof. Seung-Ki Sul}{Fall 2021, Fall 2023}
+      \resumeItemListStart
+        \resumeItem{Responsibilities}{Conducted lab sessions and tutorials; assisted students with coursework and problem sets.}
+      \resumeItemListEnd
+    \resumeSubheadingExtra
+      {Lecturer, SNU Power Electronics Center Summer School}{Summer 2022}
+      \resumeItemListStart
+        \resumeItem{Responsibilities}{Delivered lectures on digital signal processor programming and embedded firmware development for power electronics applications.}
+      \resumeItemListEnd
 
+  \resumeSubHeadingListEnd
 %-----------PUBLICATIONS-----------------
 \section{Publications}
 
@@ -239,17 +264,17 @@ Modular Programming," \textit{2025 IEEE Kiel PowerTech}, Kiel, Germany, 2025, pp
     }\vspace{-2pt}
   \resumeSubHeadingListEnd
 
-% %-----------SKILLS-----------------
-% \section{Scholarships \& Awards}
-%   \resumeSubHeadingListStart
-%       \item\small{
-%       \textbf{Recipient of the KIEE Electric Love Scholarship},  The Korean Institute of Electrical Engineers, 2021
-%     }\vspace{-2pt}
-%     \item\small{
-%       \textbf{Excellence Prize in SNU Creative Design Fair 2016}, Seoul National University, 2016
-%     }\vspace{-2pt}
+%-----------SKILLS-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    %   \item\small{
+    %   \textbf{Recipient of the KIEE Electric Love Scholarship},  The Korean Institute of Electrical Engineers, 2021
+    % }\vspace{-2pt}
+    \item\small{
+      \textbf{Excellence Prize in Creative Design Fair 2016}, Seoul National University, 2016
+    }\vspace{-2pt}
     
-%   \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
 
 
 % %-----------SKILLS-----------------
