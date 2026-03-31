@@ -1,0 +1,283 @@
+%-------------------------
+% Resume in Latex
+% Adapted from: Sourabh Bajaj (https://github.com/sb2nov/resume)
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{newtxtext} % Palatino-based serif font
+% cochineal palatino 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    {#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, rightmargin=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://www.jaeyeonpark.kr}{\Large Jaeyeon Park}} &
+    Email: \href{mailto:ok6530@snu.ac.kr}{ok6530@snu.ac.kr}, \href{mailto:ok6530@snu.ac.kr}{jaeyeonparc@icloud.com} \\
+  & \href{http://www.jaeyeonpark.kr}{www.jaeyeonpark.kr}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Seoul National University}{Seoul, Republic of Korea}
+      {Ph.D. Candidate, Electrical and Computer Engineering}{2023 -- present}
+      \resumeItemListStart
+        \resumeItem{Lab}{Power Conversion and Systems Lab (PCSL)}
+        \resumeItem{Advisor}{Prof. Shenghui Cui}
+        \resumeItem{Research}{Modular multilevel converters (MMC), medium-voltage variable frequency drives,
+          power-hardware-in-the-loop (PHIL) testing, real-time simulation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Seoul National University}{Seoul, Republic of Korea}
+      {M.S., Electrical and Computer Engineering; GPA:\, 4.03/4.3}{2021 -- 2023}
+      \resumeItemListStart
+        \resumeItem{Lab}{Electrical Engineering \& Power Electronics Lab (EEPEL)}
+        \resumeItem{Advisor}{Prof. Seung-Ki Sul}
+        \resumeItem{Thesis}{Real Time Torque Control of PMSM under Flux Weakening Operation Based on Nonlinear Optimization.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Seoul National University}{Seoul, Republic of Korea}
+      {B.S., Electrical and Computer Engineering; GPA:\,3.35/4.3}{2015 -- 2021}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Power Conversion \& Systems Lab (PCSL), Seoul National University}{Seoul, Republic of Korea}
+      {Ph.D. Candidate; Advisor: Prof. Shenghui Cui}{2023 -- present}
+      \resumeItemListStart
+        \resumeItem{MMC-Based MV Variable Frequency Drive}
+          {Led development of control algorithms and control systems for a 5\,MW Modular Multilevel Converter VFD
+           for shipboard applications.}
+        \resumeItem{PHIL Testing for Megawatt-Scale MMC}
+          {Developed a partial power-hardware-in-the-loop framework for in-situ dynamic and
+           steady-state validation of individual submodules in a megawatt-scale MMC.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Electric Energy Processing \& Control Lab (EEPEL), Seoul National University}{Seoul, Republic of Korea}
+      {M.S. Researcher; Advisor: Prof. Seung-Ki Sul, IEEE Fellow}{2021 -- 2023}
+      \resumeItemListStart
+        \resumeItem{IPMSM Optimal Control}
+          {Developed online MTPA tracking and flux-weakening torque control algorithms for
+           interior permanent magnet synchronous motors using sequential quadratic programming (SQP)
+           and min-max optimization, achieving robust performance under parameter uncertainties without lookup tables.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Signal Processing Systems Lab, Seoul National University}{Seoul, Republic of Korea}
+      {Research Assistant; Advisor: Prof. Wonyong Sung, IEEE Fellow}{2020 -- 2021}
+      \resumeItemListStart
+        \resumeItem{Snoring Diagnosis Application}
+          {Developed custom ESP32 board and custom firmware for snoring diagnosis.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Republic of Korea Army}{Seoul, Republic of Korea}
+      {Research Engineer}{2018 -- 2020}
+      \resumeItemListStart
+        \resumeItem{Parallel Computing for Signal Processing}
+          {Developed parallel computing algorithms
+          for massive signal processing.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+
+  \textbf{Journal Articles}
+  \resumeSubHeadingListStart
+
+    \item\small{
+    \textbf{J.~Park}, D.-J.~Kim, S.-Y.~Lee, J.-J.~Jung, S.-K.~Sul and S.~Cui, 
+    ``Partial Power-Hardware-in-the-Loop Test for In-Situ Dynamic and 
+    Steady-State Validation of a Single Submodule in a Megawatt-Scale MMC," 
+    in \textit{IEEE Transactions on Power Electronics}, vol. 41, no. 5, pp. 8409-8427, May 2026.
+    }\vspace{-2pt}
+
+    \item\small{
+    \textbf{J.~Park} et al., 
+    ``Equivalent Circuit Extraction of MI-HTS Coil Including High-Frequency 
+    Region for Electromagnetic Transient Simulation With Voltage-Source Converter," 
+    in \textit{IEEE Transactions on Applied Superconductivity}, vol. 35, no. 7, pp. 1-11, Oct. 2025.
+    }\vspace{-2pt}
+
+    \item\small{
+      D.-J.~Kim, \textbf{J.~Park}, Y.~Hong and S.~Cui, 
+      ``Fault-Tolerant Independent Pole Control Scheme of Zigzag MMC for 
+      Bipolar MVDC Distribution Systems," in \textit{IEEE Transactions on Power Electronics}, vol. 41, no. 6, pp. 10324-10342, June 2026.
+    }\vspace{-2pt}
+    \item\small{
+      J.~Maeng, J.~Ham, G.~Park, \textbf{J.~Park}, H.~Wu, J.-J.~Jung, S.~Cui,
+      ``A Supercapacitor Size Minimization and Energy Management Strategy for E-STATCOM
+      Connected to Weak Grid,''
+      \textit{International Journal of Electrical Power \& Energy Systems}, vol.~172, Art.~no.~111174, Nov.~2025.
+    }\vspace{-2pt}
+    \item\small{
+      Y.-W.~Kim, H.~Kim, \textbf{J.~Park}, S.-K.~Sul,
+      ``On-line Minimum Loss Control Strategy of IPMSM in Torque-Controlled Application,''
+      \textit{ Journal of Power Electronics}, vol.~24, p.~756, Apr.~2024.
+    }\vspace{-2pt}
+  \resumeSubHeadingListEnd
+
+  \textbf{Conference Papers}
+  \resumeSubHeadingListStart
+    \item\small{
+J.~Yun, \textbf{J.~Park}, S.~Moon, G.~De Carne and S.~Cui, 
+"Resource-Efficient Real-Time Simulation of Multi-Active Bridge Converters Using 
+Modular Programming," \textit{2025 IEEE Kiel PowerTech}, Kiel, Germany, 2025, pp. 1-6,
+    }\vspace{-2pt}
+
+
+    \item\small{
+      \textbf{J.~Park}, J.~Lee, D.~Kim, S.~Lee, S.~Moon, J.~Yoo, S.~Ko, S.~Cui,
+      ``MMC-Based High-Power Motor Emulator for Testing of Electrical Propulsion System,''
+      \textit{2025 IEEE Electric Ship Technologies Symposium\,(ESTS)}, Alexandria, VA, USA, 2025, pp. 162-169.
+    }\vspace{-2pt}
+
+
+    \item\small{
+      S.~Moon, \textbf{J.~Park}, D.~Kim, and S.~Cui,
+      ``Generator Operation Strategy for Naval Vessels with MVDC Distribution in Combat Situations,''
+      \textit{2025 IEEE Electric Ship Technologies Symposium\,(ESTS)}, Alexandria, VA, USA, 2025, pp. 162-169.
+    }\vspace{-2pt}
+
+
+    \item\small{
+  S.~Lee, \textbf{J.~Park}, D.~Kim and S.~Cui, 
+  "Optimal Nearest-Level Modulation of MVDC-MMC with Decoupled Control for Lower Phase Current Total Harmonic Distortion," \textit{2025 IEEE Energy Conversion Conference Congress and Exposition (ECCE)}, Philadelphia, PA, USA, 2025, pp. 1-5.
+   }\vspace{-2pt}
+
+
+    \item\small{
+      G.~Park, \textbf{J.~Park}, S.~Cui, S.-K.~Sul,
+      ``Nonlinear Optimization-Based Power-Voltage Control of Grid-Connected Converter in
+      Weak Grid,''
+      \textit{2024 IEEE Applied Power Electronics Conference and Exposition\,(APEC)}, Long Beach, CA, USA, 2024, pp. 228-233.
+    }\vspace{-2pt}
+    \item\small{
+     \textbf{J.~Park}, H.-J.~Cho, H.~Kim, S.-K.~Sul,
+      ``Online Torque Control of IPMSM for Flux Weakening Operation Using Sequential
+      Quadratic Programming,''
+      \textit{2023 IEEE Energy Conversion Congress and Exposition\,(ECCE)}, Nashville, TN, USA, 2023, pp.~4750--4755.
+    }\vspace{-2pt}
+    \item\small{
+      \textbf{J.~Park}, H.-J.~Cho, J.~Yun, S.-K.~Sul,
+      ``Online MTPA Tracking of IPMSM Based on Min-Max Optimization,''
+      \textit{2023 11th International Conference on Power Electronics and ECCE Asia (ICPE 2023 - ECCE Asia)}, 
+      Jeju Island, Korea, Republic of, 2023, pp. 199-204.
+    }\vspace{-2pt}
+  \resumeSubHeadingListEnd
+
+% %-----------SKILLS-----------------
+% \section{Scholarships \& Awards}
+%   \resumeSubHeadingListStart
+%       \item\small{
+%       \textbf{Recipient of the KIEE Electric Love Scholarship},  The Korean Institute of Electrical Engineers, 2021
+%     }\vspace{-2pt}
+%     \item\small{
+%       \textbf{Excellence Prize in SNU Creative Design Fair 2016}, Seoul National University, 2016
+%     }\vspace{-2pt}
+    
+%   \resumeSubHeadingListEnd
+
+
+% %-----------SKILLS-----------------
+% \section{Technical Skills}
+%   \resumeSubHeadingListStart
+%     \item{
+%       \textbf{Power Electronics}{: MMC design \& control, motor drives (IPMSM), grid-connected converters,
+%         PHIL/HIL testing, MVDC systems}
+%     }
+%     \item{
+%       \textbf{Control}{: MTPA/flux-weakening, disturbance observer, nonlinear optimisation (SQP, min-max),
+%         capacitor voltage balancing}
+%     }
+%     \item{
+%       \textbf{Simulation \& Firmware}{: Real-time simulation, MATLAB/Simulink, C/C++ (DSP), Python}
+%     }
+%     \item{
+%       \textbf{Communication}{: EtherCAT (IEC 61158), industrial Ethernet}
+%     }
+%   \resumeSubHeadingListEnd
+
+
+% %-----------PROFESSIONAL AFFILIATIONS-----------------
+% \section{Professional Affiliations}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{IEEE}{Student Member; Power Electronics Society (PELS); Industry Applications Society (IAS)}
+%   \resumeSubHeadingListEnd
+
+
+% %-------------------------------------------
+\end{document}
