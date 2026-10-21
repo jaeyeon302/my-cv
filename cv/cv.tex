@@ -71,6 +71,15 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newlength{\publicationNumberWidth}
+\settowidth{\publicationNumberWidth}{\small [9]}
+\newcommand{\publicationNumberLabel}[1]{\makebox[\publicationNumberWidth][l]{\small [#1]}}
+\newlength{\publicationListLeftMargin}
+\setlength{\publicationListLeftMargin}{\publicationNumberWidth}
+\addtolength{\publicationListLeftMargin}{0.5em}
+\newcommand{\publicationListStart}{\begin{itemize}[leftmargin=\publicationListLeftMargin,rightmargin=0pt]}
+\newcommand{\publicationListEnd}{\end{itemize}}
+
 
 %-------------------------------------------
 \begin{document}
@@ -181,16 +190,16 @@
 \section{Publications}
 
   \textbf{Journal Articles}
-  \resumeSubHeadingListStart
+  \publicationListStart
 
-    \item\small{
+    \item[\publicationNumberLabel{1}]\small{
     D.-J.~Kim, \textbf{J.~Park}, Adri\`a~Junyent-Ferr\'e, and S.~Cui,
     ``Small-Signal Stability Analysis on Energy-Balancing Control of Modular
     Multilevel Converter under Instantaneous Optimal Zero-Sequence Voltage Injection,''
     in \textit{IEEE Transactions on Power Electronics}, accepted for publication.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{2}]\small{
     S.-Y.~Lee, \textbf{J.~Park}, D.~Kim, S.-K.~Sul, S.~Cui, and J.-J.~Jung,
     ``Megawatt-Scale Partial PHIL Arm-Current Emulation for Submodule-Level
     Verification of MMC-Based Drives,''
@@ -198,14 +207,14 @@
     doi: \href{https://ieeexplore.ieee.org/document/11639610}{10.1109/JESTPE.2026.3719385}.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{3}]\small{
     \textbf{J.~Park}, D.-J.~Kim, S.~Lee, and S.~Cui, 
     ``Improved Decoupled Control of Modular Multilevel Converter under 
     Constraint of Nearest Level Modulation via Disturbance Observer Design," 
     in \textit{IEEE Transactions on Power Electronics}, doi: \href{https://ieeexplore.ieee.org/document/11482551}{10.1109/TPEL.2026.3684833}.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{4}]\small{
       D.-J.~Kim, \textbf{J.~Park}, Y.~Hong and S.~Cui, 
       ``Fault-Tolerant Independent Pole Control Scheme of Zigzag MMC for 
       Bipolar MVDC Distribution Systems," in \textit{IEEE Transactions on Power Electronics}, vol. 41, no. 6, pp. 10324-10342, June 2026,
@@ -213,7 +222,7 @@
     }\vspace{-2pt}
 
 
-    \item\small{
+    \item[\publicationNumberLabel{5}]\small{
     \textbf{J.~Park}, D.-J.~Kim, S.-Y.~Lee, J.-J.~Jung, S.-K.~Sul and S.~Cui, 
     ``Partial Power-Hardware-in-the-Loop Test for In-Situ Dynamic and 
     Steady-State Validation of a Single Submodule in a Megawatt-Scale MMC," 
@@ -221,7 +230,7 @@
     doi: \href{https://ieeexplore.ieee.org/document/11297165}{10.1109/TPEL.2025.3642797}.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{6}]\small{
       J.~Maeng, J.~Ham, G.~Park, \textbf{J.~Park}, H.~Wu, J.-J.~Jung, S.~Cui,
       ``A Supercapacitor Size Minimization and Energy Management Strategy for E-STATCOM
       Connected to Weak Grid,''
@@ -229,7 +238,7 @@
       doi: \href{https://www.sciencedirect.com/science/article/pii/S0142061525007227}{10.1016/j.ijepes.2025.111174}.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{7}]\small{
     \textbf{J.~Park} et al., 
     ``Equivalent Circuit Extraction of MI-HTS Coil Including High-Frequency 
     Region for Electromagnetic Transient Simulation With Voltage-Source Converter," 
@@ -237,23 +246,30 @@
     doi: \href{https://ieeexplore.ieee.org/document/11077368}{10.1109/TASC.2025.3587992}.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{8}]\small{
       Y.-W.~Kim, H.~Kim, \textbf{J.~Park}, S.-K.~Sul,
       ``On-line Minimum Loss Control Strategy of IPMSM in Torque-Controlled Application,''
       \textit{ Journal of Power Electronics}, vol.~24, p.~756, Apr.~2024,
       doi: \href{https://link.springer.com/article/10.1007/s43236-024-00773-w}{10.1007/s43236-024-00773-w}.
     }\vspace{-2pt}
-    \item\small{
+    \item[\publicationNumberLabel{9}]\small{
     \textbf{J.~Park}, J.~Lee, J.~Maeng, and S.~Cui,
     ``Sub-Switching-Period Current Limiting via PWM Carrier Shifting under Grid Faults,''
     in \textit{IEEE Transactions on Power Electronics} (under review).
     }\vspace{-2pt}
 
-  \resumeSubHeadingListEnd
+  \publicationListEnd
 
   \textbf{Conference Papers}
-  \resumeSubHeadingListStart
-    \item\small{
+  \publicationListStart
+    \item[\publicationNumberLabel{1}]\small{
+      \textbf{J.~Park} and S.~Cui,
+      ``Multicore Simulation for Large-Scale Power Electronics Circuits in PLECS,''
+      \textit{27th IEEE Workshop on Control and Modeling for Power
+      Electronics (COMPEL)}, July 2026.
+    }\vspace{-2pt}
+
+    \item[\publicationNumberLabel{2}]\small{
   S.~Lee, \textbf{J.~Park}, D.~Kim and S.~Cui, 
   ``Optimal Nearest-Level Modulation of MVDC-MMC with Decoupled Control for Lower Phase Current Total Harmonic Distortion,"
   \textit{2025 IEEE Energy Conversion Congress and Exposition (ECCE)}, Philadelphia, PA, USA, 2025, pp. 1-5,
@@ -261,7 +277,7 @@
    }\vspace{-2pt}
 
 
-    \item\small{
+    \item[\publicationNumberLabel{3}]\small{
       J.~Yun, \textbf{J.~Park}, S.~Moon, G.~De Carne and S.~Cui, 
       "Resource-Efficient Real-Time Simulation of Multi-Active Bridge Converters Using 
       Modular Programming," \textit{2025 IEEE Kiel PowerTech}, Kiel, Germany, 2025, pp. 1-6,
@@ -269,7 +285,7 @@
     }\vspace{-2pt}
 
 
-    \item\small{
+    \item[\publicationNumberLabel{4}]\small{
       \textbf{J.~Park}, J.~Lee, D.~Kim, S.~Lee, S.~Moon, J.~Yoo, S.~Ko, S.~Cui,
       ``MMC-Based High-Power Motor Emulator for Testing of Electrical Propulsion System,''
       \textit{2025 IEEE Electric Ship Technologies Symposium\,(ESTS)}, Alexandria, VA, USA, 2025, pp. 162-169,
@@ -277,7 +293,7 @@
     }\vspace{-2pt}
 
 
-    \item\small{
+    \item[\publicationNumberLabel{5}]\small{
       S.~Moon, \textbf{J.~Park}, D.~Kim, and S.~Cui,
       ``Generator Operation Strategy for Naval Vessels with MVDC Distribution in Combat Situations,''
       \textit{2025 IEEE Electric Ship Technologies Symposium\,(ESTS)}, Alexandria, VA, USA, 2025, pp. 162-169,
@@ -285,7 +301,7 @@
     }\vspace{-2pt}
 
 
-    \item\small{
+    \item[\publicationNumberLabel{6}]\small{
       G.~Park, \textbf{J.~Park}, S.~Cui, S.-K.~Sul,
       ``Nonlinear Optimization-Based Power-Voltage Control of Grid-Connected Converter in
       Weak Grid,''
@@ -293,7 +309,7 @@
       doi: \href{https://ieeexplore.ieee.org/document/10509166}{10.1109/APEC48139.2024.10509166}.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{7}]\small{
      \textbf{J.~Park}, H.-J.~Cho, H.~Kim, S.-K.~Sul,
       ``Online Torque Control of IPMSM for Flux Weakening Operation Using Sequential
       Quadratic Programming,''
@@ -301,14 +317,53 @@
       doi: \href{https://ieeexplore.ieee.org/document/10362007}{10.1109/ECCE53617.2023.10362007}.
     }\vspace{-2pt}
 
-    \item\small{
+    \item[\publicationNumberLabel{8}]\small{
       \textbf{J.~Park}, H.-J.~Cho, J.~Yun, S.-K.~Sul,
       ``Online MTPA Tracking of IPMSM Based on Min-Max Optimization,''
       \textit{2023 11th International Conference on Power Electronics and ECCE Asia (ICPE 2023 - ECCE Asia)}, 
       Jeju Island, Korea, Republic of, 2023, pp. 199-204,
       doi: \href{https://ieeexplore.ieee.org/document/10213954}{10.23919/ICPE2023-ECCEAsia54778.2023.10213954}.
     }\vspace{-2pt}
+  \publicationListEnd
+
+%-----------RESEARCH PROJECTS-----------------
+\section{Research Project}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Development of a Medium-Voltage Drive Based on a Modular Multilevel Converter}{2023 -- 2025}
+      {HD Korea Shipbuilding and Offshore Engineering}{}
+      \resumeItemListStart
+        \item\small{Developed an EtherCAT-based control system and developed motor-control algorithms specialized for MMCs.}
+        \item\small{Demonstrated a 3\,MW operation for 4.16 kV induction motors.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Development of a Parallel Computing Simulation Tool for Large-Scale Power Electronics Circuits}{2025 -- 2026}
+      {HD Korea Shipbuilding and Offshore Engineering}{}
+      \resumeItemListStart
+        \item\small{Developed a multicore program to execute large-scale power-electronics circuit models created in PLECS.}
+        \item\small{Presented the work at COMPEL 2026 and transferred the technology to HD KSOE for use in MVDC shipboard system design.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Development of a C-HIL Testbed for an LV Variable-Frequency Drive}{2026 -- present}
+      {HD Korea Shipbuilding and Offshore Engineering}{}
+      \resumeItemListStart
+        \item\small{Developed a real-time simulation model of an LVAC shipboard power system including generators, propulsion motors, thermal models for power semiconductor devices, and inverters.}
+        \item\small{Analyzed real-time simulation model stability under discretization.}
+        \item\small{Demonstrated an actual control system from HD KSOE without any modification.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Development of a DC Transformer for MVDC Shipboard Power-System Integration}{2026 -- present}
+      {HD Korea Shipbuilding and Offshore Engineering}{}
+      \resumeItemListStart
+        \item\small{Developed a testing circuit to characterize the reverse-recovery behavior of high-voltage diodes. Patent application in progress.}
+      \resumeItemListEnd
+
   \resumeSubHeadingListEnd
+
 
 %-----------SKILLS-----------------
 \section{Awards}
